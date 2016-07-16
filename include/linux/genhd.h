@@ -216,6 +216,7 @@ struct gendisk {
 #endif	/* CONFIG_BLK_DEV_INTEGRITY */
 	int node_id;
 	struct badblocks *bb;
+	int is_emmc;
 };
 
 static inline struct gendisk *part_to_disk(struct hd_struct *part)
